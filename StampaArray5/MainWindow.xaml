@@ -1,0 +1,29 @@
+﻿<Window x:Class="StampaArray5.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:StampaArray5"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="#FF58FF60" Offset="0"/>
+                <GradientStop Color="#FF60EEBA" Offset="1"/>
+                <GradientStop Color="#FFB2FBD6" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition Height="0*"/>
+        </Grid.RowDefinitions>
+        <TextBox Name="txtstringa" HorizontalAlignment="Left" Height="25" Margin="85,95,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="190"/>
+        <Label Content="Inserisci una stringa" HorizontalAlignment="Left" Height="35" Margin="85,40,0,0" VerticalAlignment="Top" Width="190" FontFamily="Stylus BT" FontSize="20"/>
+        <Button Name="btnins" Content="Inserisci" HorizontalAlignment="Left" Margin="135,164,0,0" VerticalAlignment="Top" Width="85" Height="30" FontFamily="Stylus BT" FontSize="16" Click="Inserisci_Click"/>
+        <Button Name="btnsta" IsEnabled="False" Content="Stampa" HorizontalAlignment="Left" Margin="135,230,0,0" VerticalAlignment="Top" Width="85" Click="Stampa_Click" Height="30" FontFamily="Stylus BT" FontSize="16"/>
+        <Button Name="btnpub" IsEnabled="False" Content="Pubblica" HorizontalAlignment="Left" Margin="135,300,0,0" VerticalAlignment="Top" Width="85" Height="30" FontFamily="Stylus BT" FontSize="16" Click="Pubblica_Click"/>
+        <Label Name="lblrisultato" Content="" HorizontalAlignment="Left" Height="240" Margin="390,120,0,0" VerticalAlignment="Top" Width="330" FontFamily="Stylus BT" FontSize="14" />
+
+    </Grid>
+</Window>
