@@ -54,7 +54,7 @@ namespace StampaArray5
         {
             StreamWriter sw = new StreamWriter("stringhe.txt", false, Encoding.UTF8);
             
-            for (int i = 0; i < 5; i++)
+            for (int i = 0;i < 5; i++)
             {
                 sw.WriteLine($"-{i + 1}° messaggio:  {mex[i]} \n");
             }
